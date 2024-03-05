@@ -1,0 +1,186 @@
+.basic, .khalifa .left10, .khalifa .left9, .khalifa .left8, .khalifa .left7, .khalifa .left6, .khalifa .left5, .khalifa .left4, .khalifa .left3, .khalifa .left2, .khalifa .left1, .khalifa .right12, .khalifa .right11, .khalifa .right10, .khalifa .right9, .khalifa .right8, .khalifa .right7, .khalifa .right6, .khalifa .right5, .khalifa .right4, .khalifa .right3, .khalifa .right2, .khalifa .right1 {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.khalifaWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: lightskyblue;
+}
+
+.land {
+  width: 100%;
+  background-color: brown;
+  height: 600px;
+  position: absolute;
+  top: 520px;
+}
+
+.khalifa {
+  width: 558px;
+  height: 420px;
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+}
+.khalifa .right1 {
+  background: #585555;
+  height: 21px;
+  width: 39.2px;
+  bottom: 0;
+  right: 240.8px;
+}
+.khalifa .right2 {
+  background: #635f5f;
+  height: 63px;
+  width: 11.2px;
+  bottom: 0;
+  right: 246.4px;
+}
+.khalifa .right3 {
+  background: #6d6969;
+  height: 105px;
+  width: 11.2px;
+  bottom: 0;
+  right: 252px;
+}
+.khalifa .right4 {
+  background: #787373;
+  height: 168px;
+  width: 11.2px;
+  bottom: 0;
+  right: 257.6px;
+}
+.khalifa .right5 {
+  background: #827d7d;
+  height: 231px;
+  width: 11.2px;
+  bottom: 0;
+  right: 263.2px;
+}
+.khalifa .right6 {
+  background: #8c8787;
+  height: 277.2px;
+  width: 11.2px;
+  bottom: 0;
+  right: 268.8px;
+}
+.khalifa .right7 {
+  background: #969292;
+  height: 306.6px;
+  width: 8.4px;
+  bottom: 0;
+  right: 271.6px;
+}
+.khalifa .right8 {
+  background: #a09c9c;
+  height: 327.6px;
+  width: 6.72px;
+  bottom: 0;
+  right: 273.28px;
+}
+.khalifa .right9 {
+  background: #aaa7a7;
+  height: 357px;
+  width: 5.04px;
+  bottom: 0;
+  right: 274.96px;
+}
+.khalifa .right10 {
+  background: #b4b1b1;
+  height: 399px;
+  width: 3.36px;
+  bottom: 0;
+  right: 276.64px;
+}
+.khalifa .right11 {
+  background: #bebbbb;
+  height: 420px;
+  width: 1.68px;
+  bottom: 0;
+  right: 278.32px;
+}
+.khalifa .right12 {
+  background: #c8c6c6;
+  height: 0;
+  width: 0;
+  bottom: 0;
+  right: 280px;
+}
+.khalifa .left1 {
+  background: #585555;
+  height: 21px;
+  width: 36.4px;
+  bottom: 0;
+  left: 243.6px;
+}
+.khalifa .left2 {
+  background: #635f5f;
+  height: 71.4px;
+  width: 11.2px;
+  bottom: 0;
+  left: 249.2px;
+}
+.khalifa .left3 {
+  background: #6d6969;
+  height: 126px;
+  width: 11.2px;
+  bottom: 0;
+  left: 254.8px;
+}
+.khalifa .left4 {
+  background: #787373;
+  height: 189px;
+  width: 11.2px;
+  bottom: 0;
+  left: 260.4px;
+}
+.khalifa .left5 {
+  background: #827d7d;
+  height: 273px;
+  width: 11.2px;
+  bottom: 0;
+  left: 266px;
+}
+.khalifa .left6 {
+  background: #8c8787;
+  height: 285.6px;
+  width: 8.4px;
+  bottom: 0;
+  left: 271.6px;
+}
+.khalifa .left7 {
+  background: #969292;
+  height: 315px;
+  width: 5.04px;
+  bottom: 0;
+  left: 274.96px;
+}
+.khalifa .left8 {
+  background: #a09c9c;
+  height: 336px;
+  width: 3.36px;
+  bottom: 0;
+  left: 276.64px;
+}
+.khalifa .left9 {
+  background: #aaa7a7;
+  height: 378px;
+  width: 1.68px;
+  bottom: 0;
+  left: 278.32px;
+}
+.khalifa .left10 {
+  background: #b4b1b1;
+  height: 0;
+  width: 0;
+  bottom: 0;
+  left: 280px;
+}
+
+/*# sourceMappingURL=style.css.map */

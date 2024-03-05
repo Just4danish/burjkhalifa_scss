@@ -1,0 +1,73 @@
+@use "sass:math";
+
+.basic {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+}
+.khalifaWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: lightskyblue;
+}
+.land {
+    width: 100%;
+    background-color: brown;
+    height: 600px;
+    position: absolute;
+    top: 490px;
+}
+
+$w: 560px;
+$h: math.div(3, 4) * $w;
+
+$hFloor: ceil(math.div(math.div(3, 4) * $w, 140));
+$burjKhalifaColor: rgb(78, 75, 75);
+
+$hRightSide:   (0.05*$h, 0.15*$h, 0.25*$h, 0.4*$h, 0.55*$h, 0.66*$h, 0.73*$h, 0.78*$h, 0.85*$h, 0.95*$h, 1*$h, 0);
+$fRightSide: (0.07*$w, 0.06*$w, 0.05*$w, 0.04*$w, 0.03*$w, 0.02*$w, 0.015*$w, 0.012*$w, 0.009*$w, 0.006*$w, 0.003*$w, 0);
+$wRightSide:   (0.07*$w, 0.02*$w, 0.02*$w, 0.02*$w, 0.02*$w, 0.02*$w, 0.015*$w, 0.012*$w, 0.009*$w, 0.006*$w, 0.003*$w, 0);
+
+$hLeftSide:     (0.05*$h, 0.17*$h, 0.3*$h, 0.45*$h, 0.65*$h, 0.68*$h, 0.75*$h, 0.80*$h, 0.9*$h, 0);
+$fLeftSide:     (0.065*$w, 0.055*$w, 0.045*$w, 0.035*$w, 0.025*$w, 0.015*$w, 0.009*$w, 0.006*$w, 0.003*$w, 0);
+$wLeftSide:     (0.065*$w, 0.02*$w, 0.02*$w, 0.02*$w, 0.02*$w, 0.015*$w, 0.009*$w, 0.006*$w, 0.003*$w, 0);
+
+$hStrip: (0.1*$h, 0.21*$h, 0.32*$h, 0.49*$h, 0.57*$h, $h);
+$checkStrip: (0, 0, 0, 0, 0, 1);
+
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+
+.khalifa {
+    width: $w;
+    height: $h;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    @for $i from 1 through length($hRightSide) {
+        .right#{$i} {
+            @extend .basic;
+            background: lighten($burjKhalifaColor, $i*4%);
+            height: nth($hRightSide, $i);
+            width: nth($wRightSide, $i);
+            bottom: 0;
+            right: 0.5*$w - nth($fRightSide, $i);
+        }
+    }
+    @for $i from 1 through length($hLeftSide) {
+        .left#{$i} {
+            @extend .basic;
+            background: lighten($burjKhalifaColor, $i*4%);
+            height: nth($hLeftSide, $i);
+            width: nth($wLeftSide, $i);
+            bottom: 0;
+            left: 0.5*$w - nth($fLeftSide, $i);
+        }
+    }
+}
+
